@@ -63,6 +63,9 @@ ifeq ($(HOST_OS),linux)
     endif
 endif
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
