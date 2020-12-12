@@ -1,0 +1,10 @@
+[
+ {
+   "repository": "android_vendor_xiaomi_grus",
+   "target_path": "vendor/xiaomi/android_vendor_xiaomi_grus"
+ },
+ {
+   "repository": "android_kernel_xiaomi_grus",
+   "target_path": "kernel/xiaomi/android_kernel_xiaomi_grus"
+ }
+]
