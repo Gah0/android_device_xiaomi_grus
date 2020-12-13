@@ -1,3 +1,15 @@
+# Override heap growth limit due to high display density on device
+PRODUCT_PROPERTY_OVERRIDES += \
+  dalvik.vm.heapgrowthlimit=256m
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += ro.crypto.set_dun=true
+
+PRODUCT_NAME := sdm710
+PRODUCT_DEVICE := sdm710
+PRODUCT_BRAND := qti
+PRODUCT_MODEL := SDM710 for arm64
+
 # Video codec configuration files
 PRODUCT_PACKAGES += android.hardware.media.omx@1.0-impl
 
