@@ -162,7 +162,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2018-08-05
+VENDOR_SECURITY_PATCH := 2020-09-01
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
