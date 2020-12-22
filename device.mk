@@ -123,6 +123,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    vendor.qti.hardware.display.allocator@1.0-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+    modetest \
+    gralloc.sdm710 \
+    lights.sdm710 \
+    hwcomposer.sdm710 \
+    memtrack.sdm710 \
+    libqdutils \
+    libqdMetaData
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
