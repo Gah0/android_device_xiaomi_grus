@@ -284,6 +284,8 @@ on post-fs-data
 
     # Create directory used by audio subsystem
     mkdir /data/vendor/audio 0770 audio audio
+    # Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
 
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
@@ -324,7 +326,7 @@ on post-fs-data
     mkdir /dev/socket/location/mq 0770 gps gps
     mkdir /dev/socket/location/xtra 0770 gps gps
 
-    # Create directories for wifihal services
+    #Create directories for wifihal services
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
@@ -440,7 +442,7 @@ service vendor.ss_ramdump /system/bin/subsystem_ramdump_system 2
     class late_start
 #   user system
     group system
-#   disabled
+    disabled
 
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
@@ -1189,4 +1191,3 @@ service vendor.power-hal-1-2 /vendor/bin/hw/android.hardware.power@1.2-service-q
     class hal
     user system
     group system input
-    init.qcom.rc
